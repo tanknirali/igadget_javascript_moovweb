@@ -1,0 +1,178 @@
+.mw-brands {
+	#Wrapper{
+		.Left {
+			padding: 10px;
+			h2 {
+				margin-bottom: 5px;
+				font-size: $h2_size;
+			}
+			#SideCategoryShopByPrice, #SideShopByBrand {
+				h2 {
+					min-height: 0px;
+					padding: 11px 10px 10px;
+					margin-top: 2px;
+					margin-bottom: 0;
+					background: linear-gradient(#852201 0, shade(#852201, 20%) 100%);
+					border-top: 1px solid #6a1802;
+					border-radius: 10px;
+					min-height: 40px;
+					color: $white;
+					font-size: 14px;
+					.mw_indicator {
+						float: right;
+					}
+					&[data-ur-state="disabled"] {
+						.mw_indicator {
+							@extend .sprites-plus;
+						}
+					}
+					&[data-ur-state="enabled"] {
+						.mw_indicator {
+							@extend .sprites-minus;
+							
+						}
+					}
+				}
+				.BlockContent {
+					ul {
+						margin-top: 0px;
+						padding: 2px 0 0;
+						background-color: #F5F2E1;
+						border-left: 1px solid #5f0f02;
+						border-right: 1px solid #5f0f02;
+						border-bottom: 1px solid #5f0f02;
+						overflow: hidden;
+						li {
+							display: block;
+							width: 100%;
+							border-bottom: 1px solid #5f0f02;
+							a {
+								display: block;
+								padding: 11px 20px 9px;
+								color: #3D211A;
+								
+								font-weight: bold;
+								.mw_arrow {
+	  								@include sprites-menu_go;
+	  								float: right;
+								}
+							}
+							&:last-child {
+								padding-bottom: 3px;
+								overflow: hidden;
+								border-bottom: 0px none #000;
+							}
+						}
+					}
+				}
+			}
+			#SideNewsletterBox {
+				.BlockContent {
+					form {
+						
+						#nl_first_name {
+							margin-bottom: 16px;
+						}
+					}
+				}
+			}
+			
+		}
+		.Content {
+			padding: 10px;
+			#BrandBreadcrumb {
+				display: none;
+			}
+			#BrandContent {
+				font-size: 13px;
+				.FloatRight {
+					form {
+						select {
+							margin: 0 0 1rem 0;
+							height: 2.3125rem;
+							border: 1px solid #CDCDCD;
+							margin-bottom: 16px;
+						}
+					}
+				}
+				h2 {
+					margin-top: 5px;
+					margin-bottom: 10px;
+				}
+				.BlockContent {
+					form {
+						.ProductList {
+							font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	    					
+	    					list-style: none;
+	    					margin: 0;
+	    					padding: 0;
+							li {
+								padding: 8px;
+								background-color: #f0f0f0;
+	    						border: 1px solid #e5e5e5;
+	    						width: 100%;
+	    						height: auto;
+	    						margin-bottom: 10px;
+	    						position: relative;
+	    						display: table;
+								.ProductImage {
+									margin-right: 10px;
+									float: left;
+									height: 120px;
+	    							width: 120px;
+	    							background: $white;
+	    							a {
+	    								display: table-cell;
+									    vertical-align: middle;
+									    height: 120px;
+	    							}
+	    							
+								}
+								.ProductDetails {
+									margin-bottom: 2px;
+									strong {
+										a {
+											color: #075899;
+										}
+									}
+								}
+								.ProductPriceRating {
+									em {
+										color: #F33;
+									}
+									.Rating {
+										display: block;
+									}
+								}
+								.ProductActionAdd {
+									position: absolute;
+								    bottom: 10px;
+								    left: 140px;
+								    padding: 9px 7px 5px 7px;
+								    margin: 0;
+								    
+								    display: block;
+								    line-height: 1.4;
+								    width: auto;
+								    min-width: 120px;
+	    							min-height: 20px;
+								    background: linear-gradient(#852201 0, shade(#852201, 20%) 100%);
+								    border: 1px solid #2a1205;
+								    text-align: center;
+								    border-radius: 5px;
+								    a {
+								    	color: $white;
+								    }
+							    }
+							}
+						}
+					}
+				}
+			}
+		}
+		.Right {
+			display: none;
+		}
+	}
+}

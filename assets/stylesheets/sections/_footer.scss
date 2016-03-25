@@ -1,0 +1,37 @@
+#Footer {
+	background: linear-gradient(#852201 0, shade(#852201, 20%) 100%);
+	width: auto;
+	padding: 10px;
+	font-weight: normal;
+	line-height: 1.4;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #6a1802;
+    border-bottom: 1px solid #6a1802;
+    .mw_footer {
+    	color: #d3b4af;
+    	text-align: center;
+    	.mw_currency {
+        font-size: 12px;
+      	margin-bottom: 5px;
+    	}
+    	.mw_copy {
+    		font-size: 12px;
+		  }
+    	.mw_moovweb{
+      	width: 100%;
+        .mw_powered {
+          margin-top: 10px;
+          margin-bottom: 5px;
+          font-size: 11px;
+          display: block;
+          font-style: italic;
+        }
+      	.sprites-moovweb{
+        		margin: auto;
+        		height: 11px;
+      	}         
+    	}
+    }
+}

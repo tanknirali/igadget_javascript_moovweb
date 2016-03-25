@@ -1,0 +1,217 @@
+#Header {
+  	border-top: 1px solid black;
+  	#Logo {
+	    background: linear-gradient(#C14102 0, shade(#C14102, 20%) 100%);
+	//  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+	//  @include clearfix();
+	    width: 100%;
+	    display: table;
+	    *{
+	      vertical-align: top;
+	    }
+	    #LogoContainer{
+	      	float: left;
+	      	display: inline-block;
+	      	width: 60%;
+	      	position: relative;
+	      	h1 {
+	      		margin-top: 10px;
+    			margin-left: 10px;
+		        a {
+		          	@include mw_h1; 
+		        } 
+	      	}
+	    }
+	    #TopMenu{
+	    	float: right;
+      		ul {
+      			margin-top: 0px;
+		        margin-bottom: 0px;
+		        padding-left: 0px;
+      			list-style-type: none;
+      			li {
+		            float: right;
+		            margin-top: -1px;  
+		        }
+      			.CartLink {
+      				margin-right: 10px;
+      				a {
+					    height: 39px;
+					    display: block;
+					    text-indent: -9999px;
+      				}
+      			}
+      			.First {
+      				margin-right: 10px;
+      				a {
+					    height: 39px;
+					    display: block;
+					    text-indent: -9999px;
+      				}
+      			}
+      		}
+    	}
+  	}
+  	#mw-account-section {
+  		#mw-account-content{
+  			padding: 10px;
+			.BlockContent {
+				.AccountLogin {
+					h2 {
+						text-align: center;
+					    font-size: 19px;
+					    margin-top: 10px;
+					    margin-bottom: 10px;
+					}
+					form {
+						.FormContainer {
+							dl {
+								dt {
+									font-weight: bold;
+								padding-top: 5px;
+								}
+								dd {
+									width: 255px;
+								}
+							}
+							.Submit {
+								font-size: 13px;
+								a {
+									color: #075899;
+								}
+									input[type='submit']{      
+						          	border: 1px solid black;
+						          	padding: 4px;
+						          	font-size: 13px;
+						          	color: $white;
+						          	background: #852201;
+						          	margin: 0;
+						          	display: block;
+					        	}
+							}
+						}
+					}
+				}
+				.CreateAccount {
+					.mw-or {
+						padding: 5px 10px;
+					    text-align: center;
+					    font-size: 16px;
+					}
+					a {
+						height: 20px;
+						width: 100%;
+						display: block;
+						background-color: #852201;
+						border: 1px solid #2a1205;
+						color: white;
+					}
+				}
+			}
+  		}
+  	}
+  	.mw_header_bottom {
+	    background: linear-gradient(#852201 0, shade(#852201, 20%) 100%);
+	    width: 100%;
+	    padding: 8px 10px 8px 10px;
+	    border-top: 1px solid #6a1802;
+	    display: block;
+	    position: relative;
+	    overflow: hidden;
+	    min-height: 33px;
+	    *{
+	      vertical-align: top;
+	    }
+	    .mw_search {
+	    	text-align: left;
+		    display: block;
+		    width: 75%;
+		    height: 33px;
+		    float: left;
+		    position: relative;
+		    #SearchForm {
+		    	height: 33px;
+		    	form{
+			        padding: 0;
+			        position: relative;
+			        display: block;
+			        height: 33px;
+			        input[type='text']{      
+			          	border: 1px solid black;
+			          	height: 33px;
+			          	padding: 4px;
+			          	background-color: #f1f0f0;
+			          	font-size: 13px;
+			          	margin: 0;
+			          	width: 100%;
+			          	display: block;
+			        }
+		    	}
+		    	.mw_search_btn {
+		    		height: 33px;
+				    position: absolute;
+				    top: 0;
+				    right: -13px;
+		    	}	
+		    }
+	    }
+	    .mw_menu_btn {
+	    	float: right;
+    		display: block;
+    		margin-left: 6px;
+		    height: 33px;   
+	    }
+	}
+    #Menu{
+    	background-color: #F5F2E1;
+    	font-size: 13px;
+        *{
+          	vertical-align: top;
+        }
+        overflow: hidden;
+  		ul {
+  			padding: 0px;
+  			margin: 0px;
+	        li{
+	          	display: block;
+	          	width: 100%;
+	          	border-bottom: 1px solid #C0BCA3;
+	          	a{
+		            display: block;
+		            padding: 11px 10px 10px;
+		            color: #3D211A;
+		            text-shadow: 1px 1px 0px white;
+	          	}
+    		}
+        }
+        #SideCategoryList{
+	        h2{
+	        	background: linear-gradient(#852201 0, shade(#852201, 20%) 100%);
+	          	font-size: 15px;
+	          	font-weight: normal;
+	          	color: $white; 
+	          	text-align: center;
+	          	padding: 10px;
+	          	margin: 0px;
+	        }
+	        .category-list{
+	          	padding: 2px 0 0;
+	          	background-color: #F5F2E1;
+	          	*{
+	            	vertical-align: top;
+	          	}
+	          	li{
+	            	display: block;
+	            	width: 100%;
+	            	border-bottom: 1px solid #C0BCA3;
+		            a{
+		              	display: block;
+		              	padding: 11px 10px 10px;
+		              	color: #3D211A;
+		              	text-shadow: 1px 1px 0px white;
+		            }
+		        }
+          	}
+        }	        
+	}
+}   
